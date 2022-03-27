@@ -23,9 +23,8 @@
   border-radius: 5px;
   background-color: #dcdcde;
   text-align: end;
-  font-size: 40px;
-  overflow-x: visible;
-  
+  font-size: 40px; 
+  overflow: auto;
 }
 
 .container {
