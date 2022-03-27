@@ -60,28 +60,28 @@ btns.forEach((btn) => {
 
     if (target.matches(".plus-minus")) {
       symbol = "+/-";
-      console.log(symbol);
+      div_screen.append(symbol);
     } else if (target.matches(".arrow")) {
       symbol = "<=";
-      console.log(symbol);
+      div_screen.append(symbol);
     } else if (target.matches(".mult")) {
       symbol = "*";
-      console.log(symbol);
+      div_screen.append(symbol);
     } else if (target.matches(".divide")) {
       symbol = "/";
-      console.log(symbol);
+      div_screen.append(symbol);
     } else if (target.matches(".minus")) {
       symbol = "-";
-      console.log(symbol);
+      div_screen.append(symbol);
     } else if (target.matches(".plus")) {
       symbol = "+";
-      console.log(symbol);
+      div_screen.append(symbol);
     } else if (target.matches(".equality")) {
       symbol = "=";
-      console.log(symbol);
+      div_screen.append(symbol);
     } else if (target.matches(".C_C")) {
       symbol = "C";
-      console.log(symbol);
+      screen.innerHTML = "";
     }
   });
 });
