@@ -7,19 +7,18 @@
 .big_container {
   width: 350px;
   height: 450px;
-  border: 3px solid #7e3ad6;
+  border: 3px solid white;
   margin: 50px auto;
-  border-radius: 5px;
-  background-color: #d1cbf2;
+  border-radius: 10px;
+  background-color: #4b4d5e;
 }
 
 .screen {
   width: 300px;
   height: 100px;
-  border: 3px solid grey;
   margin: 25px auto;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #dcdcde;
 }
 
 .container {
@@ -42,9 +41,19 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  background-color: #633154;
+  background-color: rgb(91, 145, 227);
   color: white;
   border: none;
+}
+
+.btns:hover {
+  background-color: #4ab0c7;
+  color: red;
+}
+
+button {
+  height: 100%;
+  width: 100%;
 }
 
 .container .equals {
@@ -56,4 +65,10 @@
 }
 .equals img {
   width: 44px;
+  padding: 70% 2px;
 }
+
+.C_C {
+  background-color: red;
+}
+/* 
