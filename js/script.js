@@ -8,6 +8,7 @@ btns.forEach((btn) => {
 
     let num;
     let symbol;
+    let result;
 
     let div_screen = document.createElement("div");
     screen.append(div_screen);
@@ -77,8 +78,21 @@ btns.forEach((btn) => {
       symbol = "+";
       div_screen.append(symbol);
     } else if (target.matches(".equality")) {
-      symbol = "=";
-      div_screen.append(symbol);
+      
+      function calc(num1, num2, action) {
+        if (action == "+") {
+          result = `${num1 + num2}`;
+        } else if (action == "-") {
+          result = `${num1 - num2}`;
+        } else if (action == "*") {
+          result = `${num1 * num2}`;
+        } else if (action == "/") {
+          result = `${num1 / num2}`;
+        }
+        return result;
+      }
+      console.log(calc(num, num, symbol));
+      div_screen.append(result);
     } else if (target.matches(".C_C")) {
       symbol = "C";
       screen.innerHTML = "";
