@@ -7,9 +7,10 @@
 .big_container {
   width: 350px;
   height: 450px;
-  border: 3px solid black;
+  border: 3px solid #7e3ad6;
   margin: 50px auto;
   border-radius: 5px;
+  background-color: #d1cbf2;
 }
 
 .screen {
@@ -18,6 +19,7 @@
   border: 3px solid grey;
   margin: 25px auto;
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .container {
@@ -26,7 +28,6 @@
   grid-column-gap: 10px;
   width: 300px;
   height: 260px;
-  border: 3px solid grey;
   margin: 25px auto;
   border-radius: 5px;
   padding-left: 2px;
@@ -41,7 +42,9 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
-  background-color: grey;
+  background-color: #633154;
+  color: white;
+  border: none;
 }
 
 .container .equals {
