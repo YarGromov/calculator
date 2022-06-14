@@ -10,6 +10,7 @@ btns.forEach((btn) => {
     let num;
     let symbol;
     let equal = "=";
+    let result = 0;
 
     let div_screen = document.createElement("div");
     screen.append(div_screen);
@@ -87,7 +88,6 @@ btns.forEach((btn) => {
     btnEquals.addEventListener('click', function(event) {
     
       function calc(num1, num2, action) {
-        let result = 0;
         switch(action) {
           case '+':
             result = num1 + num2;
