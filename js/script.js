@@ -1,6 +1,7 @@
 const btns = document.querySelectorAll("button");
 const btn = document.querySelector("btns");
 const screen = document.querySelector(".screen");
+const btnEquals = document.querySelector('.equals')
 
 btns.forEach((btn) => {
   btn.addEventListener("click", function (event) {
@@ -8,7 +9,7 @@ btns.forEach((btn) => {
 
     let num;
     let symbol;
-    let result;
+    let equal = "=";
 
     let div_screen = document.createElement("div");
     screen.append(div_screen);
@@ -77,25 +78,37 @@ btns.forEach((btn) => {
     } else if (target.matches(".plus")) {
       symbol = "+";
       div_screen.append(symbol);
-    } else if (target.matches(".equality")) {
-      
-      function calc(num1, num2, action) {
-        if (action == "+") {
-          result = `${num1 + num2}`;
-        } else if (action == "-") {
-          result = `${num1 - num2}`;
-        } else if (action == "*") {
-          result = `${num1 * num2}`;
-        } else if (action == "/") {
-          result = `${num1 / num2}`;
-        }
-        return result;
-      }
-      console.log(calc(num, num, symbol));
-      div_screen.append(result);
     } else if (target.matches(".C_C")) {
       symbol = "C";
       screen.innerHTML = "";
     }
+
+
+    btnEquals.addEventListener('click', function(event) {
+    
+      function calc(num1, num2, action) {
+        let result = 0;
+        switch(action) {
+          case '+':
+            result = num1 + num2;
+            break;
+          case '-':
+            result = num1 - num2;
+            break;
+          case '*':
+            result = num1 * num2;
+            break;
+          case '/':
+            result = num1 / num2;
+            break;
+        }
+        return result;
+      }
+      calc();
+      div_screen.append(result);
+     
+    })
   });
 });
+
+
